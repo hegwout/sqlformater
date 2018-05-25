@@ -1,0 +1,10 @@
+version: '3'
+services:
+    sqlformater:
+
+        build: druid
+        restart: always
+        ports:
+            - "8082:8080"
+        volumes:
+           - "./ROOT:/usr/local/tomcat/webapps/ROOT"
